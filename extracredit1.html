@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Extra Credit</h2>
+
+    <p>Click the button if you want to get your riddle on</p>
+
+    <button onclick="myFunction()">Get my riddle on</button>
+
+    <p id="riddle"></p>
+    <p id="incorrect"></p>
+
+    <button onclick="solve()">Not a rocket scientist? Click for the answer slacker ;)</button>
+
+    <script>
+        var riddle = "I am the first in Earth, The second in Heaven. I appear twice in a week, Never in a month, Once in a year. And I am found in the middle of the sea. I am...?";
+
+        var answer = "";
+        //var attempts = [prompt(yea...nope..thats not it)]
+
+
+        //document.getElementById("riddle").innerHTML = riddle;
+
+        function myFunction() {
+            answer = prompt(riddle);
+            console.log(answer);
+            // var laptops = document.getElementById("incorrect").innerHTML = "laptops down and try again";
+            // var laptops1 = document.getElementById("incorrect").innerHTML = "yea..not even close, 1 more try";
+            // var laptops2 = document.getElementById("incorrect").innerHTML = "So your not a rocket scientist, the answer is the letter 'e'";
+            // var laptops = "laptops down and try again";
+            // var laptops1 = "yea..not even close, 1 more try";
+            // var laptops2 = "So your not a rocket scientist, the answer is the letter 'e'";
+            // var attempts = [laptops, laptops1, laptops2]
+
+            if (answer.toLowerCase() == "e") {
+                alert("CONGRATS!! You are the brighest crayon in the box!!!");
+            }
+
+            else {
+                document.getElementById("incorrect").innerHTML = "Your not the brightest crayon in the box, laptops down and try again";
+                }
+            }
+
+function solve() {
+            answer = alert("Drum Rolllllllllllll -The answer is the letter 'e'");
+}
+
+    </script>
+
+
+</body>
+
+</html>
